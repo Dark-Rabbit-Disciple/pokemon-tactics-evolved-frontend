@@ -1,0 +1,79 @@
+<html>
+  <body>
+
+    <!-- main-app-container -->
+    <!-- This div needs another parent Div outside of it and then this div could be replaced with a component named "Game" -->
+    <div id="main-app-container">
+
+      <!-- header -->
+      <div id="header-container">
+        <div id="header-column-one" class="header-column">
+          <button class="nes-btn is-success" (click)="logOut()" id="logout-button" *ngIf="user.isLoggedIn" >LogOut</button>
+        </div>
+        <div id="header-column-two" class="header-column">
+          <h3 id="pokemon-tactics-title">Pokemon: Tactics Evolved Battle Demo</h3>
+        </div>
+      </div>
+
+      <!-- Body -->
+      <div id="body-container">
+
+        <!-- Column 1 -->
+        <div id="body-column-one" class="body-column">
+          
+          <!-- Upper Box -->
+          <!-- This should be replaced with a viewport -->
+          <div id="login-row">
+            <div *ngIf="!user.isLoggedIn" id="login-component">
+              <login-page></login-page>
+            </div>
+            <div *ngIf="user.isLoggedIn" id="trainer-card-component">
+              <img id="trainer-sprite" src="assets/battler_trainer/gold.png"/>
+              <div id="trainer-info">
+                Tester {{ this.user.userName }}<br>
+                Money: 3000$
+              </div>
+            </div>
+          </div>
+
+          <!-- Lower Box -->
+          <!-- This should be replaced with a viewport  -->
+          <div id="party-row">
+            <div *ngIf="user.isLoggedIn" id="party-component">
+              <party-window></party-window>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 2 -->
+        <div id="body-column-two" class="body-column">
+
+          <!-- This should be replaced with a viewport  -->
+          <div id="body-column-two-inner">
+            <div id="intro-animation" *ngIf="!user.isLoggedIn">
+              <img height="678px" width="678px" src="../assets/bg_menu/johto_starter_gif_background.gif" />
+            </div>
+            <battle *ngIf="user.isLoggedIn"></battle>
+          </div>
+
+        </div>
+
+        <!-- Column 3 -->
+        <div id="body-column-three" class="body-column">
+
+          <!-- Upper Box -->
+          <!-- This should be replaced with a viewport -->
+          <div id="battle-option-row">
+            <battle-option-list *ngIf="user.isLoggedIn" ></battle-option-list>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Add BG changer buttons -->
+    <div id="bg-changer">
+      
+    </div>
+  </body>
+</html>

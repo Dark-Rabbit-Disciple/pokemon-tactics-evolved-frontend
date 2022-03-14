@@ -1,0 +1,58 @@
+#hover-info-text{
+    background: white;
+    border: 1px solid black;
+}
+
+#party-window-container{
+    position: relative;
+    font-size: 9px;
+    text-align: center;
+    padding-top: 5%;
+}
+
+#party-window-frame{
+    margin-top: 25px;
+    padding-top: 15px;
+    padding-left: 15px;
+    width: 165px;
+    margin-left: 60px;
+    height: 235px;
+    position: relative;
+    background-image: url('../../assets/assets_ui/party_window.png')
+}
+
+.party-member-column{
+    height: 40px;
+    position: relative;
+}
+
+#healthbar-sprite{
+    margin-left: 5px;
+    position: left;
+}
+
+.tooltip {
+    text-align: left;
+}
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 2px 0;
+    float: left;
+    border: 1px solid black;
+    font-size: 12px;
+    width: 0px;
+    position: absolute;
+    /* Position the tooltip */
+    z-index: 2;
+    margin-left: -70px;
+}
+
+  
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    width: 200px;
+}

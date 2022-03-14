@@ -1,0 +1,26 @@
+<html>
+  <div id="login-form-container">
+    <form [formGroup]="loginForm" class="login-container" (ngSubmit)="login()">
+
+      <div class="auth-input" [ngClass]="{ 'has-error': isSubmitted && formControls.email.errors }">
+        <input class="nes-input login-input" id="username-input" type="userName" placeholder="Username" formControlName="userName">
+      </div>
+  
+      <div *ngIf="isSubmitted && formControls.userName.errors" class="help-block">
+        <div *ngIf="formControls.email.errors.required">UserName is required</div>
+      </div>
+  
+      <div class="auth-input" [ngClass]="{ 'has-error': isSubmitted && formControls.password.errors }">
+        <input class="nes-input login-input" id="password-input" type="password" placeholder="Password" formControlName="password">
+      </div>
+  
+      <div *ngIf="isSubmitted && formControls.password.errors" class="help-block">
+        <div *ngIf="formControls.password.errors.required">Password is required</div>
+      </div>
+  
+      <p>
+        <button id="login-button" class="nes-btn is-primary" type="submit" value="Log in">Login</button>
+      </p>
+    </form>
+  </div>
+</html>

@@ -1,0 +1,11 @@
+<html>
+  <div id="battle-container">
+    <div class="battlegrid-row" *ngFor="let row of battleGrid">
+      <div class="battlegrid-cell" *ngFor="let cell of row">
+        <div class="battlegrid-cell-grass" *ngIf="cell.TerrainID == 1"></div>
+        <div class="battlegrid-cell-water" *ngIf="cell.TerrainID == 3"></div>
+        <div class="battlegrid-cell-blockade" *ngIf="cell.TerrainID == 5"></div>
+      </div>
+    </div>
+  </div>
+</html>

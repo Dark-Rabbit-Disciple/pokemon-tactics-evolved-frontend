@@ -1,0 +1,24 @@
+#login-form-container{
+    
+}
+
+.auth-input{
+    position: relative;
+    width: 200px;
+    background-color: white;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+#username-input{
+    height: 30px;
+}
+
+#password-input{
+    height: 30px;
+}
+
+#login-button {
+    left: 55px;
+    position: relative;
+}

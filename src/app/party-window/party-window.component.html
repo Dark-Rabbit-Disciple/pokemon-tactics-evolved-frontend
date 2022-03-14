@@ -1,0 +1,22 @@
+<html>
+  <div id="party-window-container">
+    <div id="hover-info-text">Hover Over Party Member To See Stats</div>
+    <div id="party-window-frame">
+        <div class="party-member-column" *ngFor="let pokemon of user.party">
+          <div class="tooltip">
+            <img id="partysprite" src="assets/partysprite/{{ pokemon.partySprite }}.png" /><img id="healthbar-sprite" src="assets/assets_ui/healthbar.png" />
+            <span class="tooltiptext">
+              <div><img src="assets/battler_pokemon/{{ pokemon.infoSprite }}.png"/></div>
+              <div id="pokemon-name">{{ pokemon.name | titlecase }}</div>
+              <div>HP: {{ pokemon.hp }}</div>
+              <div>ATK: {{ pokemon.atk }}</div>
+              <div>DEF: {{ pokemon.def }}</div>
+              <div>SATK: {{ pokemon.satk }}</div>
+              <div>SDEF: {{ pokemon.sdef }}</div>
+              <div>SPD: {{ pokemon.spd }}</div>
+            </span>
+          </div>
+        </div>
+    </div>
+  </div>
+</html>

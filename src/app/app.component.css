@@ -1,0 +1,176 @@
+@font-face {
+    font-family: pokemon;
+    src: url('../assets/font/PokemonGb-RAeo.ttf') format("truetype");
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'pokemon', 'arial', sans-serif;
+    border-collapse: collapse;
+  }
+
+  #main-app-container{
+    height: 720px;
+    width: 1280px;
+    position: absolute;
+    left: 50%;
+    margin-left: -640px;
+    top: 50%;
+    margin-top: -360px;
+    background-image: url('../assets//bg_menu/falkner_bg.png');
+    box-sizing: border-box;
+    border: 1px solid black;
+  }
+
+  #header-container{
+    text-align: center;
+    height: 40px;
+    position: relative;
+    border: 1px solid black;
+  }
+
+  #header-column-one{
+    width: 300px;
+    position: relative;
+  }
+
+  #pokemon-tactics-title{
+    top: 50%;
+    margin-top: -7.5px;
+    position: relative;
+  }
+
+  #header-column-two{
+    width: 680px;
+    height: 100%;
+  }
+
+  .header-column{
+    height: 100%;
+    position: relative;
+    float: left;
+  }
+
+  #logout-button{
+    top: 25%;
+    margin-top: -7.5px;
+    position: relative;
+  }
+
+  #body-container{
+    height: 678px;
+    position: relative;
+  }
+
+  .body-column{
+      float: left;
+      /* height: 100%; */
+      position: relative;
+  }
+
+  #body-column-one{
+    width: 300px;
+    height: 678px;
+    position: relative;
+  }
+
+  #body-column-two{
+    width: 680px;
+    position: relative;
+    height: 679px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  #body-column-two-inner{
+    position: relative;
+    height: 100%;
+  }
+
+  #battle-component{
+    left: 50%;
+    position: relative;
+    margin-left: -320px;
+    margin-top: 2px;
+  }
+
+  #intro-animation{
+    text-align: center;
+    position: relative;
+    height: 679px;
+  }
+
+  #login-row{
+    height: 170px;
+    width: 100%;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  #login-component{
+    position: relative;
+    padding-left: 5%;
+    padding-top: 5%;
+    height: 100%;
+    width: 100%;
+  }
+
+  #trainer-card-component{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: white;
+  }
+
+  #trainer-sprite{
+    position: relative;
+    top: 50%;
+    margin-top: -42.5px;
+    left: 5%;
+    float: left;
+    height: 110px;
+    width: 64px;
+  }
+
+  #trainer-info{
+    font-size: 11px;
+    position: relative;
+    height: 110px;
+    width: 180px;
+    top: 50%;
+    margin-top: -42.5px;
+    left: 10%;
+    float: left;
+  }
+
+  #party-row{
+    height: 508px;
+    width: 100%;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  #party-window-container{
+    height: 520px;
+    width: 100%;
+    position: relative;
+  }
+
+  #body-column-two{
+    width: 680px;
+  }
+
+  #body-column-three{
+    width: 298px;
+    height: 678px;
+    position: absolute;
+    left: 980px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  #battle-option-row{
+    width: 100%;
+    height: 400px;
+    position: relative;
+  }

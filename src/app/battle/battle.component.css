@@ -1,0 +1,70 @@
+#battle-container{
+ position: relative;
+ margin-left: 40px;
+ margin-top: 20px;
+}
+
+.battlegrid-row{
+    border-collapse: collapse;
+    height: 32px;
+    width: 680px;
+    margin: 0;
+    padding: 0;
+    border-right: 0px;
+    position: relative;
+}
+
+.battlegrid-cell{
+    color: red;
+    box-sizing: border-box;
+    position: relative;
+    font-size: 25px;
+    border-right: 1px solid black;
+    height: 10px;
+    width: 10px;
+    height: 32px;
+    width: 32px;
+    float: left;
+}
+
+.battlegrid-cell-grass{
+    color: red;
+    box-sizing: border-box;
+    position: relative;
+    font-size: 25px;
+    border-right: 1px solid black;
+    height: 10px;
+    width: 10px;
+    height: 100%;
+    width: 32px;
+    background-image: url('/assets/battletiles/grassblock.png');
+    float: left;
+}
+
+.battlegrid-cell-water{
+    color: red;
+    box-sizing: border-box;
+    position: relative;
+    font-size: 25px;
+    border-right: 1px solid black;
+    height: 10px;
+    width: 10px;
+    height: 100%;
+    width: 32px;
+    background-image: url('/assets/battletiles/water.png');
+    float: left;
+}
+
+.battlegrid-cell-blockade{
+    color: red;
+    box-sizing: border-box;
+    position: relative;
+    font-size: 25px;
+    border-right: 1px solid black;
+    height: 10px;
+    width: 10px;
+    height: 100%;
+    width: 32px;
+    background-image: url('/assets/battletiles/blockade.png');
+    float: left;
+}
